@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 36</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 100px;
+		}
+
+		.figure {
+			width: 250px;
+			height: 250px;
+			border: 1px solid black;
+		}
+
+		form {
+			margin-top: 20px;
+		}
+
+		.square {
+			width: 250px;
+			height: 250px;
+		}
+
+		.rectangle {
+			width: 350px;
+			height: 250px;
+		}
+
+		.circle {
+			width: 250px;
+			height: 250px;
+			border-radius: 180px;
+		}
+
+		.block {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="figure">
+		</div>
+		<form id="form">
+			<span class="select-label">Выбери фигуру</span>
+			<select class="select">
+				<option value="square" selected>Квадрат</option>
+				<option value="rectangle">Прямоугольник</option>
+				<option value="circle">Круг</option>
+			</select>
+		</form>
+		<form id="form">
+			<div class="block">Выбери цвет фигуры
+				<input type="color" id="color" value="#ff0000">
+			</div>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
